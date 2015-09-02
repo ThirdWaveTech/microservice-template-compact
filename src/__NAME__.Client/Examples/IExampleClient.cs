@@ -1,0 +1,32 @@
+﻿using System.Collections.Generic;
+using System.Threading.Tasks;
+using Refit;
+using __NAME__.Messages.Examples;
+
+namespace __NAME__.Client.Examples
+{
+    /// <summary>
+    /// This is a sample interface to the Api built using Restfit.  This file 
+    /// is provided for illustrative purposes only.
+    /// </summary>
+    [Headers(
+        "Accept: application/json", 
+        "User-Agent: AllInOne Web Client")]
+    public interface IExampleClient
+    {
+        [Get("/examples")]
+        Task<IEnumerable<ExampleModel>> List();
+
+        [Get("/example/{id}")]
+        Task<ExampleModel> Get(int id);
+
+        [Post("/examples")]
+        Task<NewExampleCreatedModel> Create([Body] NewExampleModel model);
+
+        [Post("/examples/close")]
+        Task Close([Body] CloseExampleModel model);
+
+        [Delete("/example/{id}")]
+        Task Delete(int id);
+    }
+}
