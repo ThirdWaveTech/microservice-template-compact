@@ -7,7 +7,7 @@ namespace __NAME__.App.Infrastructure.Diagnostics
     {
         public PingModule()
         {
-            Get["ping"] = _ => new TextResponse("AllInOne.Api\nStatus=active");
+            Get["ping"] = _ => new TextResponse("__NAME__.Api\nStatus=active");
         }
     }
 }

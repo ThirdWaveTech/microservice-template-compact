@@ -12,7 +12,7 @@ namespace __NAME__.App.Infrastructure.Persistence
         protected virtual IPersistenceConfigurer GetDatabaseConfiguration()
         {
             return MsSqlConfiguration.MsSql2012
-                .ConnectionString(b => b.FromConnectionStringWithKey("AllInOne"));
+                .ConnectionString(b => b.FromConnectionStringWithKey("__NAME__"));
         }
 
         public virtual ISessionFactory CreateSessionFactory()

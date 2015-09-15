@@ -43,7 +43,7 @@ namespace __NAME__.Client
 
             // Add the bus to the container
             var bus = Bus.CreateSendOnly(configuration);
-            container.Configure(c => c.ForSingletonOf<ISendOnlyBus>().Use(x => bus).Named("AllInOne"));
+            container.Configure(c => c.ForSingletonOf<ISendOnlyBus>().Use(x => bus).Named("__NAME__"));
 
         }
     }

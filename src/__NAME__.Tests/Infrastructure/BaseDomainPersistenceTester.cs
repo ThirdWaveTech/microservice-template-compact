@@ -9,6 +9,6 @@ namespace __NAME__.Tests.Infrastructure
     {
         public override ISessionFactory SessionFactory => new TestSessionFactoryConfig().CreateSessionFactory();
 
-        public override IDbConnectionProvider ConnectionProvider => new TestConnectionProvider("AllInOne");
+        public override IDbConnectionProvider ConnectionProvider => new TestConnectionProvider("__NAME__");
     }
 }

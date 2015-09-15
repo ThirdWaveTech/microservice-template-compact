@@ -11,7 +11,7 @@ namespace __NAME__.Client.Diagnostics
      ****/
     [Headers(
         "Accept: application/json",
-        "User-Agent: AllInOne Web Client")]
+        "User-Agent: __NAME__ Web Client")]
     public interface IDiagnosticsClient
     {
         [Get("/ping")]

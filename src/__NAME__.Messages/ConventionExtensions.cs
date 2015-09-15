@@ -6,7 +6,7 @@ namespace __NAME__.Messages
     {
         public static Func<Type, bool> EndsWith(string name)
         {
-            return t => t.Namespace != null && t.Namespace.StartsWith("AllInOne") && t.Name.EndsWith(name);
+            return t => t.Namespace != null && t.Namespace.StartsWith("__NAME__") && t.Name.EndsWith(name);
         }
     }
 }

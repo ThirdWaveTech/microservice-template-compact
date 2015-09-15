@@ -4,7 +4,7 @@ $dbName = $OctopusParameters['db.name']
 
 .\Migrate.exe --connectionString "Server=$($dbServer);Database=$($dbName);Integrated Security=True" `
 	--provider sqlserver2012 `
-	--target "AllInOne.Database.dll" `
+	--target "__NAME__.Database.dll" `
 	--output --outputFilename migrate-output.sql --verbose=true `
 	--task migrate `
 	--timeout=600

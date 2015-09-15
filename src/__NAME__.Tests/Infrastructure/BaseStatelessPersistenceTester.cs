@@ -13,7 +13,7 @@ namespace __NAME__.Tests.Infrastructure
         public IStatelessSession GetStatelessSession()
         {
             var sessionFactory = new TestSessionFactoryConfig().CreateSessionFactory();
-            var connectionProvider = new TestConnectionProvider("AllInOne");
+            var connectionProvider = new TestConnectionProvider("__NAME__");
             return sessionFactory.OpenStatelessSession(connectionProvider.GetConnection());
         }
 

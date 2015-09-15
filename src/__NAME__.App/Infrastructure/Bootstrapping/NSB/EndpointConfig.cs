@@ -9,7 +9,7 @@ using __NAME__.Messages;
 
 namespace __NAME__.App.Infrastructure.Bootstrapping.NSB
 {
-    [EndpointName("AllInOne.input")]
+    [EndpointName("__NAME__.input")]
     public class EndpointConfig : IConfigureThisEndpoint, AsA_Server, INeedInitialization
     {
         public void Customize(BusConfiguration config)

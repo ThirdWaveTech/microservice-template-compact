@@ -10,11 +10,11 @@ namespace __NAME__.Client
     public class ApiClientFactory
     {
         private const string ERROR_STRING = "Configuration section is missing. {0} to your app settings and provide a valid URL";
-        private static readonly string ApiConfigKey = "AllInOne.api.path".ToLower();
+        private static readonly string ApiConfigKey = "__NAME__.api.path".ToLower();
 
-        /// <summary>
+        /// <summary>S
         /// Creates a client API implementation with the URL defined in the 
-        /// AllInOne.api.path appSetting.
+        /// __NAME__.api.path appSetting.
         /// </summary>
         public static T GetClient<T>()
         {

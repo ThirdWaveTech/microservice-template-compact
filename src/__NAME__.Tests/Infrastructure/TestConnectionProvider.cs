@@ -10,7 +10,7 @@ namespace __NAME__.Tests.Infrastructure
     public class TestConnectionProvider : IDbConnectionProvider
     {
         private const string DEFAULT_DB_SERVER = "(local)";
-        private const string DEFAULT_DB_NAME = "AllInOne";
+        private const string DEFAULT_DB_NAME = "__NAME__";
 
         private readonly string _connectionStringKey;
 

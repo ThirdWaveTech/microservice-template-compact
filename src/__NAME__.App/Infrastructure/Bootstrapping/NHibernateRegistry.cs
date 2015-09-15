@@ -19,7 +19,7 @@ namespace __NAME__.App.Infrastructure.Bootstrapping
 
             // Configure connection provider
             ForSingletonOf<IDbConnectionProvider>()
-                .Use(c => SqlConnectionProvider.FromConnectionStringKey("AllInOne"));
+                .Use(c => SqlConnectionProvider.FromConnectionStringKey("__NAME__"));
 
             For<INHibernateUnitOfWork>().Use<NHibernateUnitOfWork>();
 

@@ -11,8 +11,8 @@ namespace __NAME__.App.Infrastructure.Bootstrapping.Nancy
 {
     public class UnitOfWorkPipeline
     {
-        private const string UNIT_OF_WORK_SCOPE = "AllInOne.UnitOfWorkScope";
-        private const string UNIT_OF_WORK_OPTIONS = "AllInOne.UnitOfWorkOptions";
+        private const string UNIT_OF_WORK_SCOPE = "__NAME__.UnitOfWorkScope";
+        private const string UNIT_OF_WORK_OPTIONS = "__NAME__.UnitOfWorkOptions";
 
         private static readonly IEnumerable<string> Exclusions = new[] {
             "/ping"

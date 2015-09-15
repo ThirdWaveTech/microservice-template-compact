@@ -16,11 +16,11 @@ namespace __NAME__.App.Infrastructure.Diagnostics
 
         public IList<StatusItem> ReportStatus()
         {
-            var statusItem = new StatusItem("AllInOne.MessageBus.Client");
+            var statusItem = new StatusItem("__NAME__.MessageBus.Client");
 
             // Try sending a message
             try {
-                _bus.Send(new PingCommand { Sender = "AllInOne.App" });
+                _bus.Send(new PingCommand { Sender = "__NAME__.App" });
                 statusItem.Status = StatusItem.OK;
             }
             catch (Exception e)

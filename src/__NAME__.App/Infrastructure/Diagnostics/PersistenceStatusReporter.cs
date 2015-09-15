@@ -16,7 +16,7 @@ namespace __NAME__.App.Infrastructure.Diagnostics
 
         public IList<StatusItem> ReportStatus()
         {
-            var statusItem = new StatusItem("AllInOne.Domain.Persistence");
+            var statusItem = new StatusItem("__NAME__.Domain.Persistence");
             var repo = new MigrationsRepository(_unitOfWork);
 
             //Try sending a messages

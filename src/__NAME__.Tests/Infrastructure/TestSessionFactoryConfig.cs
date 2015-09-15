@@ -8,7 +8,7 @@ namespace __NAME__.Tests.Infrastructure
     {
         protected override IPersistenceConfigurer GetDatabaseConfiguration()
         {
-            var provider = new TestConnectionProvider("AllInOne");
+            var provider = new TestConnectionProvider("__NAME__");
 
             return MsSqlConfiguration.MsSql2012
                 .ConnectionString(provider.GetConnectionString());
