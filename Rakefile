@@ -55,7 +55,7 @@ task :ci => [:versionizer, :test] # Add any steps you want included in your CI
 
 desc 'Runs the acceptance tests'
 test_runner :acceptance do |t|
-  t.files = FileList["**/*.AcceptanceTests/bin/Release/*.Tests.Acceptance.dll"]
+  t.files = FileList["**/*.Tests.Acceptance/bin/Release/*.Tests.Acceptance.dll"]
   t.exe = 'src/packages/NUnit.Runners.2.6.3/tools/nunit-console.exe'
   %w(/labels /trace=Verbose).each { |p| t.parameters.add p }
 end
